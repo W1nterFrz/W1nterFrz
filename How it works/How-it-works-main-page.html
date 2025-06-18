@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Testing 1.0</title>
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- External JavaScript files (loaded deferred) -->
+    <script defer src="accordion.js"></script>
+    <script defer src="mobile.js"></script>
+
+    <!-- Inline styles (currently empty) -->
+    <style>
+        /* style.css */
+    </style>
+</head>
+
+<!-- Body with context menu and drag prevention -->
+<body oncontextmenu="return false" ondragstart="return false">
+    <!-- Top banner section -->
+    <div class="top_overlap">
+        <div class="content-wrapper">
+            <div class="text-container">
+                <!-- Main heading -->
+                <div class="heading-text">Unlock The Hidden Assets With ArtTech</div>
+                <!-- Decorative line -->
+                <div class="line"></div>
+                
+                <!-- Feature list with SVG icons -->
+                <div class="subtitle-text">
+                    <svg class="subtitle-icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z" fill="#FFB66C" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Discover the potential of art</span>
+                </div>
+                <div class="subtitle-text">
+                    <svg class="subtitle-icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z" fill="#FFB66C" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Unlock hidden value with ease</span>
+                </div>
+                <div class="subtitle-text">
+                    <svg class="subtitle-icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z" fill="#FFB66C" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Easy usage in Web 3.0</span>
+                </div>
+                <div class="subtitle-text">
+                    <svg class="subtitle-icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.49991 0.877045C3.84222 0.877045 0.877075 3.84219 0.877075 7.49988C0.877075 11.1575 3.84222 14.1227 7.49991 14.1227C11.1576 14.1227 14.1227 11.1575 14.1227 7.49988C14.1227 3.84219 11.1576 0.877045 7.49991 0.877045ZM1.82708 7.49988C1.82708 4.36686 4.36689 1.82704 7.49991 1.82704C10.6329 1.82704 13.1727 4.36686 13.1727 7.49988C13.1727 10.6329 10.6329 13.1727 7.49991 13.1727C4.36689 13.1727 1.82708 10.6329 1.82708 7.49988ZM10.1589 5.53774C10.3178 5.31191 10.2636 5.00001 10.0378 4.84109C9.81194 4.68217 9.50004 4.73642 9.34112 4.96225L6.51977 8.97154L5.35681 7.78706C5.16334 7.59002 4.84677 7.58711 4.64973 7.78058C4.45268 7.97404 4.44978 8.29061 4.64325 8.48765L6.22658 10.1003C6.33054 10.2062 6.47617 10.2604 6.62407 10.2483C6.77197 10.2363 6.90686 10.1591 6.99226 10.0377L10.1589 5.53774Z" fill="#FFB66C" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>Explore Gen-AI</span>
+                </div>
+                
+                <!-- Action buttons -->
+                <div class="button-container">
+                    <div class="about-us" href="#">About Us</div>
+                    <div class="start-now" href="#">Start Now</div>
+                </div>
+            </div>
+            
+            <!-- Banner image -->
+            <img src="images/top_overlap.jpg" alt="top_img" class="top_overlap_img">
+        </div>
+    </div>
+        
+    <!-- Introduction section -->
+    <div class="introduction">
+        <h1>How Articulator Works ?</h1>
+        <div class="tb">
+            <div>Discover the potential of your artworks</div>
+            <div>using latest</div>
+            <div>Web3 technologies</div>  
+        </div> 
+        <div class="line"></div>
+    </div>
+    
+    <!-- Step-by-step process container -->
+    <div class="steps-vertical-container">
+        <!-- Step 1 section -->
+        <div class="step-section">
+            <img src="images/num1.png" alt="Step 1" class="step-img">
+            <div class="step1-title"><span class="word-color">Build</span> Your Own Profile</div>
+            <img src="images/1.jpg" alt="" class="demontration">
+            
+            <!-- Accordion component -->
+            <div class="accordion">
+                <div class="accordion__header">
+                    <span class="accordion__arrow"></span>
+                    Create An Account
+                </div>
+                <div class="accordion__content">
+                    <p>Sign up and personalize your artist profile to make more people discover your work and style!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Artist/Buyer toggle buttons -->
+        <div class="artist-or-buyer">
+            <div class="artist">Artist</div>
+            <div class="buyer">Buyer</div>
+        </div>
+        
+        <!-- Step 2 section -->
+        <div class="step-section">
+            <div class="step-header-container">
+                <div class="step-title-left"><span class="word-color">Upload</span> Artworks</div>
+                <img src="images/num2.png" alt="Step 2" class="step-img">
+                <div class="step-title-right"><span class="word-color">Find</span> Your Interest</div>
+            </div>
+            
+            <div class="step-frame">
+                <!-- Artist side content -->
+                <div class="step-artist">
+                    <img src="images/2.jpg" alt="" class="demontration">
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            Upload Your Original Artworks
+                        </div>
+                        <div class="accordion__content">
+                            <p>Easily upload digital copies of your original pieces.</p>
+                            <br>
+                            <p>Add or Generate Artwork Details.</p>
+                            <br>
+                            <p>Include a title, description, and pricing — or let our AI assist you in crafting compelling prompts and descriptions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buyer side content -->
+                <div class="step-buyer">
+                    <img src="images/6.jpg" alt="" class="demontration1">
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            Explore the Gallery
+                        </div>
+                        <div class="accordion__content">
+                            <p>Browse through an impressive collection of original artworks and their unique derivatives.</p>
+                            <br>
+                            <p>Own Unique Derivatives. Buy artists newly co-created derivatives of original artworks at a fraction of the original cost.</p>
+                            <br>
+                            <p>After purchase, you'll receive an email with a download link for your unique digital derivative and its certificate of authenticity.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            Show Your Support
+                        </div>
+                        <div class="accordion__content">
+                            <p>Want to support the artist further? You can also order a certified print on museum-grade giclée paper, complete with a digital certificate of authenticity.</p>
+                            <br>
+                            <p>Upon purchase, an email will be sent to you confirming your purchase and where to download containing the soft copy of the derivative.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Step 3 section -->
+        <div class="step-section">
+            <div class="step-header-container">
+                <div class="step-title-left"><span class="word-color">Create</span> Your Derivatives</div>
+                <img src="images/num3.png" alt="Step 3" class="step-img">
+                <div class="step-title-right"><span class="word-color">Enjoy</span> Our Services</div>
+            </div>
+            <div class="step-frame">
+                <!-- Artist side content -->
+                <div class="step-artist">
+                    <img src="images/3.jpg" alt="" class="demontration1">
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI Derivatives&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="accordion__content">
+                            <p>Articulator will help you create stunning AI-generated derivatives of your original artworks follow your choices.</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            Generate Derivatives
+                        </div>
+                        <div class="accordion__content">
+                            <p>Generate unique derivatives of your original artworks with just a few clicks — no prompt engineering needed. Choose from a variety of styles and creativity levels.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buyer side content -->
+                <div class="step-buyer">
+                    <img src="images/5.jpg" alt="" class="demontration2">
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Physical Reprints&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="accordion__content">
+                            <p>Apart from digital version or the derivatives you purchase, Articulator also offers a option for you to get a high quality physical reprints.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            Additional Components
+                        </div>
+                        <div class="accordion__content">
+                            <p>We offer a range of additional components to decorate your physical reprints, you can choose to purchase them in the stripe page.</p>
+                            <br>
+                            <p>No worry we will be response for all the drop shippings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Step 4 section -->
+        <div class="step-section">
+            <div class="step-header-container">
+                <div class="step-title-left"><span class="word-color">Authenticate</span> With Confidence</div>
+                <img src="images/num4.png" alt="Step 4" class="step-img-4">
+                <div class="step-title-right"></div>
+            </div>
+            <div class="step-frame">
+                <!-- Artist side content -->
+                <div class="step-artist">
+                    <img src="images/4.jpg" alt="" class="demontration2">
+                    <div class="accordion">
+                        <div class="accordion__header">
+                            <span class="accordion__arrow"></span>
+                            Authenticate Protection
+                        </div>
+                        <div class="accordion__content">
+                            <p>Every purchased derivative includes HKUST's patented 2D barcode watermark and an NFC chip embedded in physical reprints. These are encoded with blockchain-enabled decentralized identifiers (W3C DID:ART), ensuring traceable, verifiable authenticity.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buyer side placeholder (empty) -->
+                <div class="step-buyer">
+                    <div class="step-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final call-to-action section -->
+    <div class="ending">
+        <h1>"Revolutionize Your Art Process !"</h1>
+        <a href="#"><h1><span class="word-color">"[Get Started Now]!"</span></h1></a>
+    </div>
+</body>
+</html>
